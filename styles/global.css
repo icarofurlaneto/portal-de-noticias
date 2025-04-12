@@ -56,6 +56,7 @@ main {
 }
 
 .content-tag {
+  font: var(--text-span);
   display: inline-block;
   background-color: var(--brand-color-dark);
   border-radius: 20px;
