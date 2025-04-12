@@ -51,3 +51,18 @@ img {
   max-width: 100%;
 }
 
+main {
+  margin-top: 40px;
+}
+
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  border-radius: 20px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-color-primary);
+  box-shadow: 0px 4px 16px rgb(14, 16, 23, 0.251);
+}

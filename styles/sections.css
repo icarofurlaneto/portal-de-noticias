@@ -1,27 +1,32 @@
 #featured {
-    img {
-        height: 100%;
-        object-fit: cover;
-        border-radius: 4px;
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .card {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(180deg, transparent 0%, rgb(2, 6, 23) 100%);
     }
 
-    .card {
-        border-radius: 4px;
-        overflow: hidden;
-        position: relative;
+    figcaption {
+      position: absolute;
+      bottom: 0;
 
+      padding: 24px;
 
-        &::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            top: 50%;
-            background: linear-gradient(
-                180deg,
-                transparent 0%,
-                #020617 100%
-            );
-        }
+      h2 {
+        margin-top: 8px;
+      }
     }
-    
+  }
 }
