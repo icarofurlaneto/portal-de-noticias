@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 :root {
@@ -12,8 +13,7 @@
   --text-color-primary: #f1f5f9;
   --text-color-secondary: #cbd5e1;
 
-  --font-family: 'Archivo', sans-serif;
-  
+  --font-family: 'Archivo', sans-serif;  
   --h1: 800 24px/135% var(--font-family);
   --h2: 800 16px/140% var(--font-family);
   --h3: 800 14px/140% var(--font-family);
