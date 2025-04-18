@@ -60,8 +60,6 @@ section header {
 
 #weekly {
 
-
-
   & > div {
     grid-template-columns: repeat(4, 292px);
   }
