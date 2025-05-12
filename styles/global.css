@@ -43,31 +43,61 @@ h1, h2, h3 {
 
 .container-header {
   width: 100%;
-  padding-inline: 32px;
+  padding-inline: 16px;
 }
 
+@media (min-width: 768px) {
+  .container-header {
+    padding-inline: 32px;
+  }
+}
 
 .container {
   max-width: 1280px;
-  padding-inline: 32px;
+  padding-inline: 16px;
   margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 32px;
+  }
 }
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 main {
-  margin-block: 40px;
-  row-gap: 80px;
-  column-gap: 32px;
-
-  grid-template-columns: 2fr 1.4fr;
-
+  margin-block: 24px;
+  row-gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas:
-  "featured featured"
-  "weekly weekly"
-  "ai aside";
+    "featured"
+    "weekly"
+    "ai"
+    "aside";
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-block: 40px;
+    row-gap: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    row-gap: 80px;
+    column-gap: 32px;
+    grid-template-columns: 2fr 1.4fr;
+    grid-template-areas:
+      "featured featured"
+      "weekly weekly"
+      "ai aside";
+  }
 }
 
 .content-tag {

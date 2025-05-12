@@ -1,8 +1,11 @@
-
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+    display: none;
+}
 
 #primary {
     font: var(--h2);
-    padding-block: 20px;
+    padding-block: 16px;
 
     div {
         display: flex;
@@ -24,5 +27,33 @@
     padding-block: 14px;
     border: solid 1px var(--stroke-color);
     border-inline: none;
-    justify-content: space-between;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    display: flex;
+    gap: 16px;
+    padding-inline: 16px;
+    justify-content: flex-start;
+}
+
+#secondary::-webkit-scrollbar {
+    display: none;
+}
+
+#secondary {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media (min-width: 768px) {
+    #primary {
+        padding-block: 20px;
+    }
+    
+    #secondary {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        padding-inline: 0;
+    }
 }
