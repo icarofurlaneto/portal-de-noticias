@@ -1,5 +1,7 @@
 # 📰 Portal de Notícias
 
+![Screenshot 2025-05-16 103405](https://github.com/user-attachments/assets/6f9c7cf8-093c-480f-85e1-a2624fc6d741)
+
 Este é um projeto de um site estático que simula um **portal de notícias online**. Criado com HTML e CSS puros, ele tem como objetivo demonstrar uma estrutura moderna de layout para conteúdo editorial, com foco em **responsividade**, **hierarquia visual** e **experiência do usuário**.
 
 🔗 Acesse o projeto online:  
